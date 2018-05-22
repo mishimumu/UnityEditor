@@ -1,0 +1,4 @@
+<data>
+  <role id="1" name="zhangsan" desc="null" attack="6" def="2" hp="1" icon="Assets/Texture/Icon/zhangsan.png" Audio="Assets/Audio/zhangsan.mp3"></role>
+  <role id="2" name="lisi" desc="null" attack="5" def="3" hp="1" icon="Assets/Texture/Icon/lisi.png" Audio="Assets/Audio/lisi.mp3"></role>
+</data>
