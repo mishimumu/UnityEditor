@@ -9,6 +9,12 @@ public class GizmosTest : MonoBehaviour
 
     private void OnDrawGizmos()
     {
+        //Draw an icon at a position in the scene view.
+        //The image filename for the icon is specified with the name parameter
+        //while the center parameter denotes the location of the icon in world space 
+        //and the allowScaling parameter determines if the icon is allowed to be scaled. 
+        //The image file should be placed in the Assets/Gizmos folder.图片资源必须放到这个文件夹下面
+        //DrawIcon can be used to allow important objects in your game to be selected quickly.
         Gizmos.DrawIcon(new Vector3(transform.position.x,transform.position.y+2,transform.position.z), "btn_bangzhu");
     }
 
