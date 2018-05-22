@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+[HelpURL("http://example.com/docs/MyComponent.html")]  //网页文档链接
 public class Attribute_other : MonoBehaviour
 {
     [Multiline(3)]      //多行文本
@@ -26,8 +26,9 @@ public class Attribute_other : MonoBehaviour
     [ColorUsage(true)]       //在“颜色”上使用此属性可配置“颜色字段”和“颜色选择器”以显示/隐藏Alpha值以及将颜色作为HDR颜色还是作为正常的LDR颜色处理。
     public Color color;      
 
-    [Space(10)]
-    public int def;          //添加字段间添加空行
+    [Space(10)]             //添加字段间添加空行
+    [Delayed]               //Attribute used to make a float, int, or string variable in a script be delayed.焦点离开后生效
+    public int def;          
     
     // Use this for initialization
     void Start()
