@@ -1,3 +1,8 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
 [CreateAssetMenu(fileName = "playerData", menuName = "CreateAssetMenu", order = 0)]
 public class Attribute_CreateAssetMenu : ScriptableObject
 {

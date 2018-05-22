@@ -10,7 +10,7 @@ public class CustomInspectorEditor : Editor
     public override void OnInspectorGUI()
     {
         //base.OnInspectorGUI();
-        CustomInspector customInspector = (CustomInspector)target;
+        MyPlayer customInspector = (MyPlayer)target;
         EditorGUILayout.BeginVertical();
         
         customInspector.title=EditorGUILayout.TextField("title",customInspector.title);

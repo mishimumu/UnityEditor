@@ -6,19 +6,18 @@ using UnityEditor;
 [CustomPropertyDrawer(typeof(Ingredient))]
 public class Editor__PropertyDrawer : PropertyDrawer {
 
-   
 
     public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
     {
-       base.OnGUI(position, property, label);
-       
-      /*
+       //base.OnGUI(position, property, label);
+
+
         // Using BeginProperty / EndProperty on the parent property means that
         // prefab override logic works on the entire property.
         EditorGUI.BeginProperty(position, label, property);
 
         // Draw label
-       position = EditorGUI.PrefixLabel(position, GUIUtility.GetControlID(FocusType.Passive), label);
+        position = EditorGUI.PrefixLabel(position, GUIUtility.GetControlID(FocusType.Passive), label);
         // Don't make child fields be indented
         var indent = EditorGUI.indentLevel;
         EditorGUI.indentLevel = 0;
@@ -37,11 +36,11 @@ public class Editor__PropertyDrawer : PropertyDrawer {
         EditorGUI.indentLevel = indent;
 
         EditorGUI.EndProperty();
-        */
-        
-        
+
+
+
     }
 
-   
-    
+
+
 }
